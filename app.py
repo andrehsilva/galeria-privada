@@ -227,7 +227,8 @@ def index():
         }
 
         function copyURL(url) {
-            navigator.clipboard.writeText(url);
+            //navigator.clipboard.writeText(url);
+            const cleanURL = url.split('?')[0]; navigator.clipboard.writeText(cleanURL);
             notify("Link copiado!");
         }
 
