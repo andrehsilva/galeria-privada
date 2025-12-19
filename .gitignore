@@ -1,0 +1,32 @@
+# Variáveis de Ambiente (Segurança)
+.env
+.env.local
+.env.*
+
+# Python - Arquivos do sistema
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Logs do Flask e Gunicorn
+*.log
+access.log
+error.log
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Distribuição / Build
+dist/
+build/
+*.egg-info/
