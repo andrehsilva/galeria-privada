@@ -227,8 +227,7 @@ def index():
         }
 
         function copyURL(url) {
-            //navigator.clipboard.writeText(url);
-            const cleanURL = url.split('?')[0]; navigator.clipboard.writeText(cleanURL);
+            navigator.clipboard.writeText(url);
             notify("Link copiado!");
         }
 
@@ -289,6 +288,4 @@ def delete(name):
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    # Importante para o Easypanel reconhecer a porta correta
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=5000, debug=True)
